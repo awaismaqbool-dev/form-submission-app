@@ -28,6 +28,6 @@ It allows users to submit form data, validates the input, and stores it securely
 
 ---
 
-![Form Screenshot](./screenshots/form-page.png)
-![Form submited Screenshot](./screenshots/form-submit.png)
-![Form data save in mongodb](./screenshots/sava-data-in-mongodb.png)
+![Form Screenshot](./Screenshots/form-page.png)
+![Form submited Screenshot](./Screenshots/form-submit.png)
+![Form data save in mongodb](./Screenshots/sava-data-in-mongodb.png)
