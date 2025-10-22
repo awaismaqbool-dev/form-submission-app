@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="unistyle.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Form - Submisssion page</title>
+  </head>
+
+  <body>
+    <div class="container justify-content">
+      <div class="main flex">
+        <div class="halfBox"></div>
+        <div class="elipse4 elipse"></div>
+        <div class="elipse5 elipse"></div>
+        <div class="elipse6 elipse"></div>
+        <div class="formCard flex colum align-items">
+          <h1 class="Form_heading">SignUp</h1>
+          <div class="slider flex justify-space-between align-items">
+            <div class="loading flex colum align-items">
+              <div class="flex justify-content align-items">1</div>
+              Basic Details
+            </div>
+            <div class="line border"></div>
+            <div class="loading flex colum align-items Verification">
+              <div class="flex justify-content align-items">2</div>
+              Verification
+            </div>
+          </div>
+          <form action="/" method="post" class="fullWidth" enctype="multipart/form-data">
+          <div class="Details_Section ">
+            <h2 class="display_colum_responsive  Form_heading Details">Basic Details</h2>
+            <div
+            class="display_colum_responsive name_sec flex fullWidth justify-space-between align-items grid-container gap "
+            >
+            <div class="resposive_full_width input_heading flex colum ">
+              Full Name<input type="text" placeholder="Enter your Full name " 
+              name= "fullName" required />
+            </div>
+            <div class=" reponsive_margin flex colum align-items right-aligned-item">
+              <div class="image_Sub flex justify-content align-items">
+                
+                <input
+                type="file"
+                alt="Submit your image"
+                name="image"
+                id="input_image"
+                accept=".jpg ,.png"
+                required
+                />
+                <img src="svgs/camera.svg" alt="image" class="camera_img">
+              </div>
+              <p class="input_heading photo_text">Add Photo</p>
+            </div>
+          </div>
+          <div class="display_colum_responsive  loctaion input_heading">
+            Constituency
+            <input type="text" placeholder="Select Your Constituency" name="location" required />
+            <!-- <img src="svgs/loctaion.svg" alt="add loction"> -->
+          </div>
+          <div class=" display_colum_responsive flex grid-container gap Top_margin ">
+            <div class=" skills_sec flex colum ">
+              <label class="input_heading" for="skill"
+                >Select Your Skill</label
+                >
+              <select name="skill" id="skills" required>
+                <option value="" disabled selected hidden>
+                  - Select an Option -
+                </option>
+                <option value="Graphic Skill">Graphic Skills</option>
+                <option value="Coding/Programming">Coding/Programming</option>
+                <option value="Social Media Maketing">Social Media</option>
+                <option value="Data Analytics">Data Analytics</option>
+                <option value="Database Management">Database Management</option>
+                <option value="MS Office">MS Office</option>
+              </select>
+            </div>
+            <div class="skills_sec flex colum">
+              <label class="input_heading" for="position"
+              >Select Your Position</label
+              >
+              <select name="position" id="position" required>
+                <option value="" disabled selected hidden>
+                  - Select an Option -
+                </option>
+                <option value="Software Developer">Software Developer</option>
+                <option value="Web Developer">Web Developer</option>
+                <option value="Mobile App Developer">
+                  Mobile App Developer
+                </option>
+                <option value="Data Analyst">Data Analyst</option>
+                <option value="Database Administrator">
+                  Database Administrator
+                </option>
+                <option value="Cloud Engineer">Cloud Engineer</option>
+                <option value="Network Engineer">Network Engineer</option>
+                <option value="Cybersecurity Specialist">
+                  Cybersecurity Specialist
+                </option>
+                <option value="System Administrator">
+                  System Administrator
+                </option>
+                <option value="UI/UX Designer">UI/UX Designer</option>
+                <option value="IT Project Manager">IT Project Manager</option>
+                <option value="AI/ML Engineer">AI/ML Engineer</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="display_colum_responsive resposive_full_width Top_margin flex grid-container gap align-items">
+            <div class="input_heading flex colum ">
+              Date Of Birth
+              <input type="date" name="birth" required />
+            </div>
+            <div class="gender_selection"> 
+              Gender
+              <div class="radio flex justify-space-between">
+                <span class="flex justify-content align-items"><input type="radio" name="gender" id="Male" value="male" >Male</span>
+                <span class="flex justify-content align-items"><input type="radio" name="gender" id="Female" value="female">Female</span>
+              </div>
+            </div>
+          </div>
+          <div class=" Mission Top_margin flex colum input_heading">
+            Vision & Mission
+            <textarea name="vision" id="Mission" placeholder="Type Here"></textarea>
+          </div>
+          <div class="resposive_full_width display_colum_responsive Top_margin input_heading">
+            Contact Details
+            <div class=" resposive_full_width display_colum_responsive contact_Box input_heading flex">
+              <div>
+                Phone Number
+                <input type="number" name="PhoneNumber" id="PhoneNumber" placeholder="Enter your Number" required >
+              </div>
+              <div>
+                CNIC Number
+                <input type="number" name="CNIC_Number" id="CNIC_Number" placeholder="Enter your CNIC Number"required >
+              </div>
+              <div>
+                Email Address
+                <input type="email" name="email" id="email_address" placeholder="Enter your Email Address"required >
+              </div>
+            </div>
+          </div>
+          
+          <input type="submit" value="Save & Continue" class="Save_button">
+          </form>
+        </div>
+      </div>
+      </div>
+          </div>
+          <script src="index.js"></script>
+  </body>
+  </html>
